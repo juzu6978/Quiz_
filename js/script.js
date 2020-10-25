@@ -65,3 +65,15 @@ let close_buttons = () => {
 
 	}
 }
+
+var k = 0;
+var photos = ["aa.PNG", "CFFF767B86A748329EE50E73C5C9EAA6_LL.jpg", "cycle.PNG", "DSC_0442.JPG", "DSC_0489.JPG"];
+
+let change_photo = () => {
+	console.log("a");
+	document.getElementById("index").style.backgroundImage = "url(../images/" + photos[k] +")";
+	k++;
+	if(k + 1 > photos.length){
+		k = 0;
+	}
+}
