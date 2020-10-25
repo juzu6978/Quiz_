@@ -2,7 +2,7 @@
 let send_message_click = () => {
 	var $input_message = document.getElementById("input_message").value;
 	if($input_message === "hello"){
-		location.href = "https://www.sejuku.net/blog/64379";
+		location.href = "https://www.google.co.jp/";
 	}
 	console.log("a");
 }
@@ -47,6 +47,10 @@ let open_buttons = () => {
 		i++;
 	}
 	j++;
+	//配列の分オープンすると自動的にページを遷移
+	if(j > open_button.length){
+		location.href = "https://www.google.co.jp/";
+	}
 }
 
 //ボタンが押されると一行のみになる関数
