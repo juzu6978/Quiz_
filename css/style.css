@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 #index {
-	background-image: url(../images/DSC_0489.JPG);
-	/*background-color: #ddbea9;*/
+	/*background-image: url(../images/DSC_0489.JPG);*/
+	background-color: #f4a261;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -16,7 +16,7 @@
 .input {
 	width: 400px;
 	text-align: center;
-	background-color: rgba(165, 165, 141 ,1);
+	background-color: rgba(233, 196, 106 ,1);
 	margin : auto auto;
 	border-radius: 30px;
 	padding : 10px;
@@ -29,11 +29,11 @@
 a {
 	font-size: 40px;
 	float: left;
-	color: #cb997e;
+	color: #264653;
 }
 
 .header {
-		background-color: #fff1e6;
+		background-color: #e9c46a;
 }
 
 
@@ -44,4 +44,46 @@ small {
 
 .center {
 	text-align: center;
+}
+
+.btn-primary {
+  background: #2a9d8f;
+	border-color: #2a9d8f;
+  color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
+.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary,
+.open > .dropdown-toggle.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary.focus,
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+  background: #2a9d8f;
+	border-color: black;
+  color: black;
+}
+
+.btn-primary.outline {
+    border: 3px solid #2a9d8f;
+    color: #2a9d8f;
+}
+
+
+
+.navigation {
+	margin-right: 100px;
+}
+
+.scale_change img {
+	display: block;
+	transition-duration: 0.5s;
+}
+.scale_change img:hover {
+	transform: scale(1.5,1.5);
+	transition-duration: 0.5s;
+	margin-left: 100px;
 }

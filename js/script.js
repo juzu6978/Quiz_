@@ -70,6 +70,7 @@ let close_buttons = () => {
 	}
 }
 
+
 var k = 0;
 var photos = ["aa.PNG", "CFFF767B86A748329EE50E73C5C9EAA6_LL.jpg", "cycle.PNG", "DSC_0442.JPG", "DSC_0489.JPG"];
 
@@ -81,3 +82,67 @@ let change_photo = () => {
 		k = 0;
 	}
 }
+
+
+var fs = require('fs');
+
+var text = "hoge foo bar";
+fs.writeFile('hoge.txt', text);
+
+ //after you have created sendData object
+fs.readFile('./user/userData.json', 'utf8', function (err, data) {
+  if (err) throw err;
+  output = JSON.parse(data);
+  output.push(sendData[0]);
+  const sendJSON = JSON.stringify(output, null, 2);
+  fs.writeFile('./user/userData.json', sendJSON, function(err){
+    if (err) throw err;
+    res.send(sendJSON)
+  });
+});
+
+
+/*
+//JSON書き出し
+// originalDataに，種々のデータが格納されているとする。次は一例。
+originalData = {
+  id: 123,
+  name: "mochi",
+  favoriteFoods: [
+    "くさもち",
+    "くるみもち",
+    "道明寺"
+  ],
+};
+
+// 保存するJSONファイルの名前
+const fileName = "mochi.json";
+
+// データをJSON形式の文字列に変換する。
+const data = JSON.stringify(originalData);
+
+// HTMLのリンク要素を生成する。
+const link = document.createElement("a");
+
+// リンク先にJSON形式の文字列データを置いておく。
+link.href = "data:text/plain," + encodeURIComponent(data);
+
+// 保存するJSONファイルの名前をリンクに設定する。
+link.download = fileName;
+
+// ファイルを保存する。
+link.click();
+*/
+
+//JSONファイルの読み込み
+(() => {
+	let xhr = new XMLHttpRequest();
+	xhr.open('GET', "json/test.json");
+
+	xhr.onload = () => {
+		let responseJson = JSON.parse(xhr.response);
+		console.log(responseJson.name);
+	}
+
+	xhr.send();
+})();
