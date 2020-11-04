@@ -34,7 +34,7 @@ a {
 }
 
 .header {
-		background-color: #e9c46a;
+background-color: #e9c46a;
 }
 
 
@@ -76,7 +76,7 @@ small {
 
 
 .navigation {
-	margin-right: 100px;
+	vertical-align: middle;
 }
 
 .scale_change img {
@@ -95,4 +95,55 @@ small {
 	padding: 10px 20px;
 	font-size: 30px;
 
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.nav-item a:hover {
+	border-bottom: 3px solid black;
+	text-decoration: none;
+}
+
+
+
+.white {
+	background-color: #ffffff;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 30px;
+	font-family: monospace;
+}
+
+.hint {
+	background-color: #ffffff;
+	width: 1080px;
+	margin: auto;
+	border-radius: 60px;
+	padding: 30px;
+	text-align: left;
+	border: 5px solid #264653;
+}
+
+.list_header {
+	padding-left: 10px;
+	border-left: 10px solid #2a9d8f;
+}
+
+.title {
+	vertical-align: middle;
+	margin: auto auto;
+	float: left;
+}
+
+.header_text {
+	width: 960px;
+	height: 100px;
+	margin: 0 auto;
 }

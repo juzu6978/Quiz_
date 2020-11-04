@@ -12,7 +12,7 @@
 
   <body id="index">
   	<header class="header">
-				<div>
+				<div class="title">
 					<a href="index.html">Quiz</a>
 				</div>
 				<nav class="navigation">
@@ -30,30 +30,22 @@
 				</nav>
 		</header>
 
-		<div class="center">
-			<button type="button" class="btn btn-primary mt-5" onclick="change_photo()">change photo</button>
-		</div>
-
-		<div class="scale_change ml-5">
-			<img src="images/ashinoko.PNG" width="300">
-		</div>
-
-
-		<div class="mt-5 center" id="table">
-			<div name="row" id="buttons" class="mt-3">
-				<button type="button" class="btn btn-info mr-5" onclick="open_buttons()">1</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">2</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">3</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">4</button>
+		<!--Crossword-->
+		<div class="mt-2 center">
+			<h1>次のクロスワードを解いて</h1>
+			<img class="white" src="images/%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89.png" alt="crossword">
+			<div class="hint mt-5">
+				<h2 class="list_header">縦のヒント</h2>
+				<p>(a) : シンガポールにある屋上に船が乗っているホテルの名前は？</p>
+				<p>(c) : GWに二人で旅行に行ったのは何県？</p>
+				<p>(e) : バチェラー3でバチェラーの話す癖は通称なんと呼ばれている？</p>
+				<h2 class="list_header">横のヒント</h2>
+				<p>(b) : 二人で初めて会った日に行ったケーキ屋さんは？</p>
+				<p>(d) : 文蔵の大人気ピザメニューといえば？</p>
 			</div>
 		</div>
 
 
-		<div class="input mt-5">
-			<h2>INPUT ANSWER</h2>
-			<input type="text" id="input_message" onkeypress="send_message_key()" value="">
-			<button type="button" class="btn btn-primary" onclick="send_message_click()">送信</button>
-		</div>
 		<footer>
 			<small>(C) 2020 Masaki Komura</small>
 		</footer>
