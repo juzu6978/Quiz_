@@ -10,25 +10,26 @@
 		<link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body id="index">
-  	<header class="header">
-				<div class="title">
-					<a href="index.html">Quiz</a>
-				</div>
+	<body>
+		<header class="header">
+			<div class="header_text">
+				<a href="index.html">Quiz</a>
 				<nav class="navigation">
 						<ul class="nav justify-content-end">
 							<li class="nav-item mr-5">
-								<a class="nav-link active" href="#">Active</a>
+								<a class="nav-link active" href="crossword.html">Cross Word</a>
 							</li>
 							<li class="nav-item mr-5">
-								<a class="nav-link active" href="#">Active</a>
+								<a class="nav-link active" href="change_photo.html">select photo</a>
 							</li>
 							<li class="nav-item mr-5">
 								<a class="nav-link active" href="#">Active</a>
 							</li>
 						</ul>
 				</nav>
+			</div>
 		</header>
+
 
 		<!--Crossword-->
 		<div class="mt-2 center">
@@ -43,6 +44,13 @@
 				<p>(b) : 二人で初めて会った日に行ったケーキ屋さんは？</p>
 				<p>(d) : 文蔵の大人気ピザメニューといえば？</p>
 			</div>
+		</div>
+
+
+		<div class="input mt-5">
+			<h2>INPUT ANSWER</h2>
+			<input type="text" id="input_message" onkeypress="send_message_key()" value="">
+			<button type="button" class="btn btn-primary" onclick="crossword_answer()">送信</button>
 		</div>
 
 

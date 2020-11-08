@@ -34,7 +34,8 @@ a {
 }
 
 .header {
-background-color: #e9c46a;
+	background-color: #e9c46a;
+	height: 90px;
 }
 
 
@@ -109,15 +110,15 @@ a:hover {
 
 
 .white {
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 30px;
 }
 
 p {
-	font-size: 30px;
+	font-size: 20px;
 	font-family: monospace;
 }
 
@@ -145,5 +146,45 @@ p {
 .header_text {
 	width: 960px;
 	height: 100px;
+	display: table;
 	margin: 0 auto;
+	vertical-align: middle;
+}
+
+
+
+.headr_text a {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+header {
+	height: 100px;
+}
+
+.photo_button {
+	display: block;
+}
+
+
+
+.block {
+	display: inline-block;
+}
+
+.block button {
+	display: block;
+	margin: 0 auto;
+}
+
+.block img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+.btn_answer {
+
+	margin: 50px 800px;
 }

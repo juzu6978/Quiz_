@@ -7,11 +7,21 @@ let send_message_click = () => {
 	console.log("a");
 }
 
+//送信を押した場合に条件分岐を行う
+let crossword_answer = () => {
+	var $input_message = document.getElementById("input_message").value;
+	if($input_message === "ああああ"){
+		location.href = "https://www.google.co.jp/";
+	}
+	console.log("a");
+}
+
 //エンターキーを押した場合にアクション
 let send_message_key = () => {
 	console.log(event.keyCode);
 	if(event.keyCode === 13){
 		send_message_click();
+		crossword_answer();
 	}
 }
 
@@ -83,66 +93,52 @@ let change_photo = () => {
 	}
 }
 
-
-var fs = require('fs');
-
-var text = "hoge foo bar";
-fs.writeFile('hoge.txt', text);
-
- //after you have created sendData object
-fs.readFile('./user/userData.json', 'utf8', function (err, data) {
-  if (err) throw err;
-  output = JSON.parse(data);
-  output.push(sendData[0]);
-  const sendJSON = JSON.stringify(output, null, 2);
-  fs.writeFile('./user/userData.json', sendJSON, function(err){
-    if (err) throw err;
-    res.send(sendJSON)
-  });
-});
-
-
-/*
-//JSON書き出し
-// originalDataに，種々のデータが格納されているとする。次は一例。
-originalData = {
-  id: 123,
-  name: "mochi",
-  favoriteFoods: [
-    "くさもち",
-    "くるみもち",
-    "道明寺"
-  ],
-};
-
-// 保存するJSONファイルの名前
-const fileName = "mochi.json";
-
-// データをJSON形式の文字列に変換する。
-const data = JSON.stringify(originalData);
-
-// HTMLのリンク要素を生成する。
-const link = document.createElement("a");
-
-// リンク先にJSON形式の文字列データを置いておく。
-link.href = "data:text/plain," + encodeURIComponent(data);
-
-// 保存するJSONファイルの名前をリンクに設定する。
-link.download = fileName;
-
-// ファイルを保存する。
-link.click();
-*/
-
-//JSONファイルの読み込み
-(() => {
-	let xhr = new XMLHttpRequest();
-	xhr.open('GET', "json/test.json");
-
-	xhr.onload = () => {
-		let responseJson = JSON.parse(xhr.response);
-		console.log(responseJson.name);
+/////--------change photo--------/////
+var p1 = 0, p2 = 0, p3 = 0, p4 = 0;
+let change_photo1 = () => {
+	p1++;
+	if(p1 + 1 > 4){
+		p1 = 0;
 	}
+	document.getElementById("photo1").src = "images/photos1/photos1("+p1+").jpg";
+}
 
-	xhr.send();
-})();
+let change_photo2 = () => {
+	p2++;
+	if(p2 + 1 > 4){
+		p2 = 0;
+	}
+	document.getElementById("photo2").src = "images/photos2/photo("+p2+").jpg";
+}
+
+let change_photo3 = () => {
+	p3++;
+	if(p3 + 1 > 4){
+		p3 = 0;
+	}
+	document.getElementById("photo3").src = "images/photos3/photo("+p3+").jpg";
+}
+
+let change_photo4 = () => {
+	p4++;
+	if(p4 + 1 > 4){
+		p4 = 0;
+	}
+	document.getElementById("photo4").src = "images/photos4/photo("+p4+").jpg";
+}
+
+let answer_photo = () => {
+	console.log(p1);
+	console.log(p2);
+	console.log(p3);
+	console.log(p4);
+	if(p1 === 3 && p2 === 2 && p3 === 0 && p4 === 2){
+		alert("正解");
+	}
+	else{
+		alert("不正解");
+	}
+}
+
+
+/////--------     end     --------/////
