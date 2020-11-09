@@ -10,7 +10,7 @@ let send_message_click = () => {
 //送信を押した場合に条件分岐を行う
 let crossword_answer = () => {
 	var $input_message = document.getElementById("input_message").value;
-	if($input_message === "ああああ"){
+	if($input_message === "サンタクロース"){
 		location.href = "https://www.google.co.jp/";
 	}
 	console.log("a");
