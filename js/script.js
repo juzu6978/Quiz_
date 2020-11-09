@@ -25,7 +25,7 @@ let send_message_key = () => {
 	}
 }
 
-var open_button = [2, 3, 4, 2, 3];
+var open_button = [8, 7, 1, 1, 2, 4];
 var j = 0;
 //ボタンがひとつづつ増えていく関数
 let open_buttons = () => {
