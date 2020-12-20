@@ -38,29 +38,15 @@
 			</div>
 		</header>
 
-		<div class="center">
-			<button type="button" class="btn btn-primary mt-5" onclick="change_photo()">change photo</button>
+
+		<div class="mt-2 center">
+			<h1 class="white">Solve all the above three problems and receive a message from まーくん!</h1>
 		</div>
-
-		<div class="scale_change ml-5">
-			<img src="images/photos1/photos1(1).jpg" width="300">
-		</div>
-
-
-		<div class="mt-5 center" id="table">
-			<div name="row" id="buttons" class="mt-3">
-				<button type="button" class="btn btn-info mr-5" onclick="open_buttons()">1</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">2</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">3</button>
-				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">4</button>
-			</div>
-		</div>
-
 
 		<div class="input mt-5">
-			<h2>INPUT ANSWER</h2>
-			<input type="text" id="input_message" onkeypress="send_message_key()" value="">
-			<button type="button" class="btn btn-primary" onclick="send_message_click()">送信</button>
+			<h2>FINAL ANSWER</h2>
+			<input type="text" id="input_final" onkeypress="final_answer()" value="">
+			<button type="button" class="btn btn-primary" onclick="final_answer()">送信</button>
 		</div>
 		<footer>
 			<small>(C) 2020 Masaki Komura</small>

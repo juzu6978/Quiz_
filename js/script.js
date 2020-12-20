@@ -10,8 +10,8 @@ let send_message_click = () => {
 //送信を押した場合に条件分岐を行う
 let crossword_answer = () => {
 	var $input_message = document.getElementById("input_message").value;
-	if($input_message === "サンタクロース"){
-		location.href = "https://www.google.co.jp/";
+	if($input_message === "サンタクロース" || $input_message === "さんたくろーす"){
+		alert("正解!答えは「ま」");
 	}
 	console.log("a");
 }
@@ -59,7 +59,7 @@ let open_buttons = () => {
 	j++;
 	//配列の分オープンすると自動的にページを遷移
 	if(j > open_button.length){
-		location.href = "https://www.google.co.jp/";
+		alert("正解!答えは「お」");
 	}
 }
 
@@ -133,11 +133,20 @@ let answer_photo = () => {
 	console.log(p3);
 	console.log(p4);
 	if(p1 === 3 && p2 === 2 && p3 === 0 && p4 === 2){
-		alert("正解");
+		alert("正解!答えは「き」");
 	}
 	else{
 		alert("不正解");
 	}
+}
+
+
+let final_answer = () => {
+	var $input_message_final = document.getElementById("input_final").value;
+	if($input_message_final === "まきお"){
+		window.location.href = "message.html";
+	}
+	console.log("a");
 }
 
 

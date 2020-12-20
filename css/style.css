@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 #index {
-	/*background-image: url(../images/DSC_0489.JPG);*/
+	background-image: url(../images/DSC_0489.JPG);
 	background-color: #f4a261;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -47,6 +47,7 @@ small {
 
 .center {
 	text-align: center;
+	margin: auto;
 }
 
 .btn-primary {
@@ -182,8 +183,7 @@ header {
 
 
 .btn_answer {
-
-	margin: 50px 800px;
+	/*margin: 50px 800px;*/
 }
 
 .title a {
