@@ -39,15 +39,24 @@
 		</header>
 
 
-		<div class="mt-2 center">
-			<h1 class="white">Solve all the above three problems and receive a message from まーくん!</h1>
+
+		<div class="center white">
+			<h1 class="m-5">まーくんの住所とさゆの住所のそれぞれの数字を足し合わせた7桁の数字を順に押せ</h1>
+		</div>
+		<div class="mt-5 center" id="table">
+			<div name="row" id="buttons" class="mt-3">
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">0</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">1</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">2</button>
+				<button type="button" class="btn btn-info mr-5" onclick="open_buttons()">3</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">4</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">5</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">6</button>
+				<button type="button" class="btn btn-info mr-5" onclick="close_buttons()">7</button>
+			</div>
 		</div>
 
-		<div class="input mt-5">
-			<h2>FINAL ANSWER</h2>
-			<input type="text" id="input_final" onkeypress="final_answer()" value="">
-			<button type="button" class="btn btn-primary" onclick="final_answer()">送信</button>
-		</div>
+
 		<footer>
 			<small>(C) 2020 Masaki Komura</small>
 		</footer>
